@@ -1,88 +1,97 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfolio" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Welcome to The Minimal Site"
     />
-    <script
-      src="https://kit.fontawesome.com/fa62c117c7.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="styles.css" />
-    <title>Minimal</title>
+<meta itemprop="name" content="Minimal Roblox Site">
+<meta itemprop="description" content="Welcome to The Minimal Site">
+<meta itemprop="image" content="assets/images/sharing-card.png">
+<meta property="og:url" content="https://cassidycamp.work/minimal">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Minimal Roblox Site">
+<meta property="og:description" content="Welcome to The Minimal Site">
+<meta property="og:image" content="assets/images/sharing-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Minimal Roblox Site">
+<meta name="twitter:description" content="Welcome to The Minimal Site">
+<meta name="twitter:image" content="assets/images/sharing-card.png">
+    <link
+      rel="preload"
+      href="assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="style.css"  />
+    <script src="script.js" defer></script>
+
+    <!-- Your name here -->
+    <title>Minimal Roblox Site</title>
   </head>
-  <body class="dark" id="top">
-    <header class="header center">
-      <h3>
-        <a href="https://cassidycamp.work/minimal" class="link"
-          >Minimal.</a
-        >
-      </h3>
 
-      <nav class="nav center">
-        <ul class="nav__list center">
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#contact">Contact</a>
-          </li>
-        </ul>
+  <body>
 
-        <button type="button" aria-label="toggle theme" class="btn btn--icon">
-          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
-        </button>
+    <script>
+      const theme = "dark";
+      document.body.classList.add(theme);
+    </script>
 
-        <button
-          type="button"
-          aria-label="toggle navigation"
-          class="btn btn--icon nav__hamburger"
-        >
-          <i aria-hidden="true" class="fas fa-bars"></i>
-        </button>
-      </nav>
-    </header>
+    <header class="header">
 
-    <main>
-      <div class="about center">
-        <h1>We are <span class="about__name">Minimal.</span></h1>
-        <h2 class="about__role">A Roblox Exploiting Community</h2>
-        <p class="about__desc">
-        "Minimal actions, maximum outcomes. That’s how we exploit." - TMT
-        </p>
-
-        <div class="about__contact center">
-          <a
-            href="https://discord.gg/minimal"
-            aria-label="discord"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-discord"></i>
-          </a>
+      <div class="menu-btn-container">
+        <div class="container">
+          <button type="button"  class="menu-btn">menu</button>
         </div>
       </div>
-    </main>
+
+      <nav class="nav hidden">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="https://discord.gg/minimal">Discord</a></li>
+        </ol>
+      </nav>
+
+      <div class="container">
+        <div class="header-textbox">
+          <h1 class="h1">
+            <span>We are Minimal</span>
+            <span>A Roblox exploiting community
+            </span>
+          </h1>
+          <p class="header-text">
+            "Minimal actions, maximum outcomes. That’s how we exploit." - The Minimal Team
+          </p>
+
+          <div class="header-btns">
+            <a href="https://discord.gg/minimal" class="btn btn-cta">Join The Discord</a>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <footer class="footer">
-      <a
-        href="https://cassidycamp.work"
-        class="link footer__link"
-      >
-        Created By Cassidy
-      </a>
-    </footer>
+      <div class="container">
+        <div class="footer-content">
+          <nav>
+            <ol class="footer-links">
 
-    <div class="scroll-container">
-      <div class="scroll-top">
-        <a aria-label="Scroll up" href="#top">
-          <i aria-hidden="true" class="fas fa-arrow-up"></i>
-        </a>
+            </ol>
+          </nav>
+          <p class="footer-text">
+            &copy; <span>2024</span> - This site was designed & developed by <a target="_blank" rel="noopener" href="https://cassidycamp.work">Cassidy Camp.</a>
+          </p>
+          <label class="theme-switch" for="theme-switch">
+            <span>Dark Theme</span>
+            <input type="checkbox" id="theme-switch" role="switch"/>
+          </label>
+        </div>
       </div>
-    </div>
-
-    <script src="./script.js"></script>
+    </footer>
   </body>
 </html>
